@@ -40,6 +40,11 @@ func (c Circle) area() float64 {
 	return math.Pi * math.Pow(c.radius, 2)
 }
 
+// Nothing additional is required to implement an interface
+// (there is no implements or extends keyword).
+// It’s sufficient to merely have a method with the same name and
+// signature.
+
 func getArea(shape Shape) float64 {
 	return shape.area()
 }

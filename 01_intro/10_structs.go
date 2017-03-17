@@ -5,10 +5,8 @@ import (
 )
 
 type Rectangle struct {
-	leftX  float64
-	topY   float64
-	height float64
-	width  float64
+	leftX, topY   float64
+	height, width float64
 }
 
 func main() {
