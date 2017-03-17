@@ -31,14 +31,31 @@ func main() {
 	z, w := 1, 2 // Short declaration
 
 	fmt.Println(x, y, z, w)
+	fmt.Println(
+		reflect.TypeOf(x),
+		reflect.TypeOf(y),
+		reflect.TypeOf(z),
+		reflect.TypeOf(w),
+	)
 
 	var s0 string = "hello"
-	s1 := "world" // Short declaration
+	var s1 = "fucking"
+	s2 := "world" // Short declaration
 
-	fmt.Println(s0, s1)
+	fmt.Println(s0, s1, s2)
+	fmt.Println(
+		reflect.TypeOf(s0),
+		reflect.TypeOf(s1),
+		reflect.TypeOf(s2),
+	)
 
 	a, b, c, d := 1, true, "bye", 0.1 // Short declaration
-	fmt.Println(reflect.TypeOf(a), reflect.TypeOf(b), reflect.TypeOf(c), reflect.TypeOf(d))
+	fmt.Println(
+		reflect.TypeOf(a),
+		reflect.TypeOf(b),
+		reflect.TypeOf(c),
+		reflect.TypeOf(d),
+	)
 
 	fmt.Println(a, b, c, d)
 
